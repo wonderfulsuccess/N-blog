@@ -25,7 +25,9 @@ module.exports = function(app) {
       });
     });
   });
-
+  app.get('/framk', function(req, res){
+    res.send("wonderfulsuccess@163.com");
+  });
   app.get('/reg', checkNotLogin);
   app.get('/reg', function (req, res) {
     res.render('reg', {
